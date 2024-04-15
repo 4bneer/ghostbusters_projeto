@@ -2,3 +2,158 @@
     font-family: Ghostbusters;
     src: url('./font/GHOSTBUS.TTF');
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    min-width: 100vw;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding-right: 5vw;
+    background-color: green;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header img {
+    height: 100px;
+    margin-left: 20px;
+}
+
+nav ul {
+    width: 17vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-family: 'GhostBusters';
+    cursor: pointer;
+    margin-right: 5vw;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: " ";
+    width: 0%;
+    border-radius: 20px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.sobre {
+    width: 100vw;
+    height: 700px;
+    background-image: url(./img/brickwall.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sobre img {
+    height: 600px;
+    margin: 50px;
+}
+
+.sobre {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    margin: 30px;
+    padding: 30px;
+    border-radius: 17px;
+    background-color: white;
+}
+
+p {
+    font-size: 18px;
+}
+
+.content h3,
+.slimer h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-family: 'GhostBusters';
+}
+
+.slimer {
+    background-image: url('./img/restaurant.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slimer > div{
+    margin: 30px;
+    padding: 30px;
+    border-radius: 17px;
+    background-color: rgba(255, 255, 255, .55);  
+    backdrop-filter: blur(7px);
+    width: 600px;
+}
+
+.contato{
+    height: 800px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato img {
+    height: 700px;
+}
+
+form {
+    background-color: green;
+    height: 500px;
+    width: 450px;
+    border-radius: 17px;
+    margin: 80px;
+    align-items: center;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    padding: 4px;
+}
