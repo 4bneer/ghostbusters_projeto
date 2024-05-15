@@ -134,7 +134,7 @@ p {
 }
 
 .contato {
-    height: 800px;
+    height: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,7 +184,6 @@ input,textarea, button {
     margin: 10px 0;
     width: 100%;
     padding: 4px;
-    appearance: textfield;
     border:none;
     border-radius: 7px;
     padding:7px;
