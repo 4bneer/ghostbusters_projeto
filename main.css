@@ -9,7 +9,6 @@
     box-sizing: border-box;
 }
 
-
 header {
     min-width: 100vw;
     height: 120px;
@@ -134,7 +133,7 @@ p {
 }
 
 .contato {
-    height: 900px;
+    height: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,7 +146,6 @@ p {
 form {
     background-color: rgba(100, 255, 120, .65);
     backdrop-filter: blur(7px);
-    height: 85vh;
     width: 450px;
     border-radius: 17px;
     margin: 80px;
@@ -179,24 +177,26 @@ label {
     font-family: helvetica, sans-serif;
 }
 
-input,textarea, button {
+input,
+textarea,
+button {
     display: block;
     margin: 10px 0;
     width: 100%;
     padding: 4px;
-    border:none;
+    border: none;
     border-radius: 7px;
-    padding:7px;
+    padding: 7px;
     font-size: 16px;
 }
 
-textarea{
+textarea {
     resize: none;
     height: 12vh;
 }
 
 input:focus,
-textarea:focus{
+textarea:focus {
     outline: none;
 }
 
@@ -205,11 +205,13 @@ textarea:focus{
     margin-top: 20px;
 }
 
-button{
+button {
     margin-top: 30px;
+    margin-bottom: 30px;
     padding: 10px;
     font-size: 20px;
     font-family: helvetica, sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
+    transition: .3s;
 }
